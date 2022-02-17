@@ -1,4 +1,8 @@
+import {Facebook, Google, MailOutline} from '@mui/icons-material';
+
 export default function LoginButton({way, icon}){
+
+    const iconNames = ["Facebook", "Google", "MailOutline"];
 
     const style = {
         width: "388px",
@@ -16,8 +20,9 @@ export default function LoginButton({way, icon}){
     const text = `Continue with ${way}`;
 
     return (
-        <div style={style}>
+        <button style={style}>
+            <MailOutline />
             {text}
-        </div>
+        </button>
     )
 }
