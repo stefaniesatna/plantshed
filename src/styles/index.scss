@@ -1,9 +1,9 @@
 :root {
   --highlight: #b5dcbd;
   --highlight-faded: #b6e5bf;
-  --special: #FDEB83;
+  --special: #fdeb83;
 
-  --background: #EFF2F6;
+  --background: #eff2f6;
   --component: #e8e9eb;
   --feature: #ccc;
   --selected: #aeaeae;
@@ -18,9 +18,9 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Optimistic Display", "Segoe UI";
   box-sizing: border-box;
   outline: none;
-  font-family: "Optimistic Display", "Segoe UI";
   font-weight: 100;
   color: var(--text-strong);
 }
@@ -35,6 +35,54 @@ html {
 body {
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.blurb {
+  background-color: #b5dcbd;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-bottom: 2%;
+  color: #344854;
+}
+
+.blurb p {
+  padding-top: 1%;
+  font-size: 1vw;
+  max-width: 30%;
+}
+
+.filters {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
+
+.filtersHeader {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.clearFilters {
+  color: #ccc;
+  padding-left: 1%;
+  padding-top: 8px;
+}
+
+.clearFilters:hover {
+  color: #aeaeae;
+  cursor: pointer;
+}
+
+.filters div {
+  display: flex;
+}
+
+.filterTile {
+  padding-bottom: 10px;
+}
+
+input {
+  margin: 0.3rem;
 }
 
 /* //////////////////////////////////////////////////////////////// */
@@ -57,7 +105,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     gap: 2em;
-  
+
     .headerBasket {
       display: flex;
       gap: 1em;
@@ -67,6 +115,7 @@ body {
   .headerLink {
     position: relative;
     width: fit-content;
+    text-decoration: none;
     cursor: pointer;
     &:hover:before {
       visibility: visible;
@@ -141,10 +190,10 @@ body {
         }
       }
     }
-    
-    img, button {
+
+    img,
+    button {
       border-radius: 0.5em;
     }
-
   }
 }

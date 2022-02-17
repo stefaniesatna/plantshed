@@ -4,6 +4,8 @@ import Checkout from "./components/Checkout";
 import LoginModal from "./components/login/LoginModal";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Blurb from "./components/Blurb";
+import Filters from "./components/Filters";
 
 function App() {
   return (
