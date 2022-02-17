@@ -4,8 +4,7 @@ import Checkout from "./components/Checkout";
 import LoginModal from "./components/login/LoginModal";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Blurb from "./components/Blurb";
-import Filters from "./components/Filters";
+import Plants from "./components/Plants";
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="plants" element={<Plants />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="login" element={<LoginModal />} />
       </Routes>
