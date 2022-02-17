@@ -1,11 +1,10 @@
 // import { ReactComponent as basket } from 'public/img/basket.svg';
 import Basket from "./basket";
-import "../styling/header.css";
 
 export default function Header() {
   return (
     <div className="header">
-      <span className="links">
+      <span className="headerLinks">
         <a href="/coffee" className="headerLink">
           Coffee
         </a>
@@ -21,7 +20,7 @@ export default function Header() {
         <img src="/img/ps-logo.svg" height="40px" />
       </a>
 
-      <span className="account">
+      <span className="headerAccount">
         <Basket />
         <p className="headerLink">Login</p>
       </span>
