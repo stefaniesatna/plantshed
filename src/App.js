@@ -1,7 +1,7 @@
 import "./App.css";
 import Component from "./components/Component";
 import Checkout from "./components/Checkout";
-import LoginModal from "./components/login/LoginModal";
+import LoginPage from "./components/login/LoginPage";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Blurb from "./components/Blurb";
@@ -25,7 +25,7 @@ function App() {
           }
         />
         <Route path="checkout" element={<Checkout />} />
-        <Route path="login" element={<LoginModal />} />
+        <Route path="login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
