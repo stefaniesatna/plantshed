@@ -50,21 +50,11 @@ body {
     justify-content: space-evenly;
     gap: 2em;
   }
-  .headerAccount {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2em;
-  
-    .headerBasket {
-      display: flex;
-      gap: 1em;
-    }
-  }
-
   .headerLink {
     position: relative;
     width: fit-content;
     cursor: pointer;
+    text-decoration: none;
     &:hover:before {
       visibility: visible;
       width: 100%;
@@ -79,6 +69,16 @@ body {
       visibility: hidden;
       transition: all 0.25s ease-in-out;
       background-color: var(--text-strong);
+    }
+  }
+  .headerAccount {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+
+    .headerBasket {
+      display: flex;
+      gap: 1em;
     }
   }
 }
