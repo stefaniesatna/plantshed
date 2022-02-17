@@ -16,7 +16,7 @@
   margin: 0;
   font-family: "Optimistic Display", "Segoe UI";
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   font-weight: 100;
   color: var(--text-strong);
@@ -90,11 +90,11 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 60px;
   width: 100vw;
   background-color: var(--highlight);
@@ -105,9 +105,13 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   gap: 2em;
+}
+
+.header .headerImage {
+  margin-top: 0.5em;
 }
 
 .header .headerAccount {
@@ -115,8 +119,8 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   gap: 2em;
 }
 
