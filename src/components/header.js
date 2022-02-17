@@ -1,5 +1,5 @@
-// import { ReactComponent as basket } from 'public/img/basket.svg';
 import Basket from "./basket";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -21,8 +21,12 @@ export default function Header() {
       </a>
 
       <span className="headerAccount">
-        <Basket />
-        <p className="headerLink">Login</p>
+        <Link className="headerLink" to="checkout">
+          <Basket />
+        </Link>
+        <Link className="headerLink" to="login">
+          Login
+        </Link>
       </span>
     </div>
   );
