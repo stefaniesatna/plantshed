@@ -5,6 +5,7 @@ import LoginModal from "./components/login/LoginModal";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plants from "./components/Plants";
+import LoginWithEmail from "./components/login/LoginWithEmail";
 
 function App() {
   return (
