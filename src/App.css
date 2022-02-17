@@ -1,19 +1,1 @@
-body {
-  height: 100%;
-  margin: 0;
-}
 
-.blurb {
-  background-color: #b5dcbd;
-  padding-top: 2%;
-  padding-left: 10%;
-  padding-bottom: 2%;
-  font-family: "Optimistic-Display", "Segoe UI";
-  color: #344854;
-}
-
-.blurb p {
-  padding-top: 1%;
-  font-size: 1vw;
-  max-width: 30%;
-}

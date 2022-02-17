@@ -6,8 +6,8 @@ const Checkout = () => {
 
   return (
     <div className="checkout">
+      <h1>Checkout</h1>
       <form className="checkout-container">
-        <h1>Checkout</h1>
         <h3 className="heading-3">Payment Details</h3>
         <Input label="Cardholder's Name" type="text" name="name" />
         <Input
