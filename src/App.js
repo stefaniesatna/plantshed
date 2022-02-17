@@ -1,5 +1,5 @@
 import "./App.css";
-import Component from "./components/Component";
+import Home from "./components/home";
 import Checkout from "./components/Checkout";
 import LoginModal from "./components/login/LoginModal";
 import Header from "./components/header";
@@ -12,18 +12,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route
-          path="plants"
-          element={
-            <>
-              <Blurb
-                title="Shop Plants"
-                body="Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces. "
-              />
-              <Filters />
-            </>
-          }
-        />
+        <Route index element={<Home />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="login" element={<LoginModal />} />
       </Routes>
