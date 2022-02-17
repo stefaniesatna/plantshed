@@ -9,7 +9,7 @@ export default function Header() {
             <p className='headerLink'>About</p>
         </span>
 
-        <img src='/img/ps-logo.svg' height='40px'/>
+        <img src='/img/ps-logo.svg' height='40px' style={{cursor: 'pointer'}}/>
 
         <span className='headerAccount'>
             <Basket />
