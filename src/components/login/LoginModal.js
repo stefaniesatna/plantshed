@@ -1,25 +1,52 @@
-import LoginButton from "./LoginButton"
+import { Facebook, Google, MailOutline } from "@mui/icons-material";
 
-export default function LoginModal(){
+export default function LoginModal() {
+  const loginWays = [
+    { name: "Facebook", icon: <Facebook /> },
+    { name: "Google", icon: <Google /> },
+    { name: "Email", icon: <MailOutline /> },
+  ];
 
-    const loginWays = [{name: "Facebook", icon: "FacebookIcon"}, {name: "Google", icon: "GoogleIcon"}, {name: "Email", icon: "MailOutlineIcon"}];
+  const style = {
+    backgroundColor: "#ffffff",
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "#e1e4eb",
+    padding: 38,
+    margin: 28,
+    borderRadius: 5, 
 
-    const style = {
-        width: "460px", 
-        backgroundColor: "#ffffff",
-        borderColor: "red",
-        borderStyle: "solid",
-        borderWidth: 1,
-        padding: 38,
-    }
+  };
 
-    const loginButtons = loginWays.map(way => <LoginButton way={way.name} icon={way.icon} />)
+  const styleButton = {
+    width: "388px",
+    height: "48px",
+    borderRadius: 5, 
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "#e1e4eb",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    marginBottom: 10,
+    backgroundColor: "#ffffff",
+    display: "flex",
+    flexDirection: "row",
+}
 
-    return (
-        <div style={style}>
-            <h1>Welcome Back</h1>
-            <h2>Login to continue</h2>
-            {loginButtons}
-        </div>
-    )
+  const loginButtons = loginWays.map((way) => (
+    <button style={styleButton}>
+      {way.icon}
+      <div style={{marginRight: 10}}/>
+      {`Continue with ${way.name}`}
+    </button>
+  ));
+
+  return (
+    <div style={style}>
+      <h1>Welcome Back</h1>
+      <h2>Login to continue</h2>
+      {loginButtons}
+    </div>
+  );
 }
