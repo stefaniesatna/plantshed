@@ -1,2 +1,10 @@
-.App {
+.blurb {
+  background-color: #b5dcbd;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.blurb p {
+  font-size: 1.2em;
 }

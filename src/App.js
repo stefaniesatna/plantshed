@@ -1,10 +1,11 @@
-import './App.css';
-import Component from './components/Component';
+import "./App.css";
+import Component from "./components/Component";
+import Blurb from "./components/Blurb";
 
 function App() {
   return (
     <div>
-        <Component />
+      <Blurb title={"Test Title"} body={"Test body"} />
     </div>
   );
 }
