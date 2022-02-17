@@ -11,12 +11,19 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Blurb
-        title="Shop Plants"
-        body="Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces. "
-      />
-      <Filters />
       <Routes>
+        <Route
+          path="plants"
+          element={
+            <>
+              <Blurb
+                title="Shop Plants"
+                body="Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces. "
+              />
+              <Filters />
+            </>
+          }
+        />
         <Route path="checkout" element={<Checkout />} />
         <Route path="login" element={<LoginModal />} />
       </Routes>

@@ -33,11 +33,16 @@
   gap: 2em;
 }
 
+.headerImage {
+  padding-top: 0.5em;
+}
+
 .headerLink {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  text-decoration: none;
   cursor: pointer;
 }
 

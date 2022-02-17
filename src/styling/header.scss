@@ -17,9 +17,14 @@
   gap: 2em;
 }
 
+.headerImage {
+  padding-top: 0.5em;
+}
+
 .headerLink {
   position: relative;
   width: fit-content;
+  text-decoration: none;
   cursor: pointer;
   &:hover:before {
     visibility: visible;
