@@ -5,7 +5,12 @@ import Blurb from "./components/Blurb";
 function App() {
   return (
     <div>
-      <Blurb title={"Test Title"} body={"Test body"} />
+      <Blurb
+        title={"Shop Plants"}
+        body={
+          "Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces. "
+        }
+      />
     </div>
   );
 }
