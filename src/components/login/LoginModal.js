@@ -2,7 +2,7 @@ import LoginButton from "./LoginButton"
 
 export default function LoginModal(){
 
-    const loginWays = [{name: "Facebook", icon: "Assetlink"}, {name: "Google", icon: "Assetlink"}, {name: "Email", icon: "AssetLink"}];
+    const loginWays = [{name: "Facebook", icon: "FacebookIcon"}, {name: "Google", icon: "GoogleIcon"}, {name: "Email", icon: "MailOutlineIcon"}];
 
     const style = {
         width: "460px", 
