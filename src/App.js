@@ -4,6 +4,7 @@ import Checkout from "./components/Checkout";
 import LoginPage from "./components/login/LoginPage";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LoginWithEmail from "./components/login/LoginWithEmail";
 
 function App() {
   return (
