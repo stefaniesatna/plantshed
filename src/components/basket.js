@@ -1,16 +1,13 @@
+import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
+import {useState} from 'react';
+
 export default function Basket() {
+  const [basketCount, setBasketCount] = useState(0);
+
   return (
-    <div style={basketStyles.basket}>
-      <p>3</p>
+    <div className='headerBasket'>
+      <ShoppingBasketOutlinedIcon />
+      <p>{basketCount}</p>
     </div>
   )
-}
-
-const basketStyles = {
-  basket: {
-    display: 'flex',
-    alignContent: 'center',
-    height: 20,
-    width: 20,
-  },
 }

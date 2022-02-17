@@ -1,5 +1,3 @@
-import "../styles/Checkout.css";
-
 const Checkout = () => {
   const visaImage =
     "https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png";
@@ -35,7 +33,7 @@ const Checkout = () => {
 };
 
 const Input = (props) => (
-  <div className="input">
+  <div className="checkout-input">
     <label>{props.label}</label>
     <div className="input-field">
       <input type={props.type} name={props.name} />

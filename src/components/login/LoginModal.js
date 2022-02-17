@@ -1,5 +1,4 @@
 import { Facebook, Google, MailOutline } from "@mui/icons-material";
-import "../../styles/Login.css";
 
 export default function LoginModal({handleSelect}) {
   const loginWays = [
@@ -23,4 +22,3 @@ export default function LoginModal({handleSelect}) {
       {loginButtons}
     </div>
   );
-}
