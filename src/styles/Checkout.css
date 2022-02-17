@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
 .checkout {
+  font-family: 'Cormorant Garamond', serif;
   height: 430px;
   /**background: #2f2c33;**/
   color: black;
@@ -17,6 +20,7 @@
 }
 
 .input {
+  font-family: "Montserrat", "Helvetica Neue", Verdana, Arial, sans-serif;
   padding: 5px 0;
 }
 
