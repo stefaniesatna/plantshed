@@ -1,3 +1,8 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .blurb {
   background-color: #b5dcbd;
   padding-top: 2%;
