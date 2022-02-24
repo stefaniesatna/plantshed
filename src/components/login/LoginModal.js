@@ -1,7 +1,6 @@
 import { Facebook, Google, MailOutline } from "@mui/icons-material";
 
-export default function LoginModal({handleSelect}) {
-
+export default function LoginModal({ handleSelect }) {
   const loginWays = [
     { name: "Facebook", icon: <Facebook /> },
     { name: "Google", icon: <Google /> },
@@ -9,7 +8,7 @@ export default function LoginModal({handleSelect}) {
   ];
 
   const loginButtons = loginWays.map((way) => (
-    <button className="login-button" onClick={handleSelect}>
+    <button key={way.name} className="login-button" onClick={() => handleSelect(way.name)}>
       {way.icon}
       <div style={{ marginRight: "1em" }} />
       {`Continue with ${way.name}`}
