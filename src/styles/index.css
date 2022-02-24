@@ -325,15 +325,25 @@ body {
 }
 
 .checkout {
-  height: 430px;
+  height: auto;
   /**background: #2f2c33;**/
   color: var(--text-strong);
-  width: 50%;
-  /**height: 430px;**/
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .checkout .checkout-container {
-  padding: 35px 25px;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.checkout .checkout-label {
+  color: var(--text-strong);
 }
 
 .checkout .checkout-input {
@@ -376,13 +386,34 @@ body {
   margin-right: 5px;
 }
 
-.checkout .checkout-btn {
+.back-btn {
+  background: var(--component);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 5px;
+  width: 10%;
+  height: 40px;
+  margin-top: 50px;
+  color: var(--text-strong);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: var(--selected);
+}
+
+.checkout-btn {
   background: #000;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 5px;
-  width: 50%;
+  width: 40%;
   height: 40px;
   margin-top: 50px;
   color: var(--text-contrast);
@@ -391,6 +422,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   cursor: pointer;
+}
+
+.checkout-btn:hover {
+  color: var(--text-dull);
 }
 
 .login-page {
@@ -433,6 +468,24 @@ body {
   border: 1px solid #e1e4eb;
   border-radius: 5px;
   margin-top: 1em;
+}
+
+.login-page .login-form {
+  width: 90%;
+  background-color: aqua;
+}
+
+.login-page .login-form .section {
+  padding: 1em 0 0 0;
+}
+
+.login-page .login-form input {
+  width: 100%;
+  padding: 1em;
+}
+
+.login-page .login-form label {
+  width: 100%;
 }
 
 .login-page .centered-text {
