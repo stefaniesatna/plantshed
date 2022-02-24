@@ -22,3 +22,4 @@ export default function LoginModal({handleSelect}) {
       {loginButtons}
     </div>
   );
+  }
