@@ -1,10 +1,9 @@
+import CheckoutStepper from "./components/CheckoutStepper";
 import Home from "./components/home";
-import Checkout from "./components/Checkout";
-import LoginModal from "./components/login/LoginModal";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plants from "./components/Plants";
-import LoginWithEmail from "./components/login/LoginWithEmail";
+import LoginPage from "./components/login/LoginPage";
 
 function App() {
   return (
@@ -13,8 +12,8 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="plants" element={<Plants />} />
-        <Route path="checkout" element={<Checkout />} />
-        <Route path="login" element={<LoginModal />} />
+       <Route path="checkout" element={<CheckoutStepper />} />
+       <Route path="login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

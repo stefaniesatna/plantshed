@@ -1,4 +1,4 @@
-const Checkout = () => {
+const Payment = () => {
   const visaImage =
     "https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png";
 
@@ -24,9 +24,6 @@ const Checkout = () => {
           <Input label="Expiration Date" type="month" name="exp_date" />
           <Input label="CVV" type="number" name="cvv" />
         </div>
-        <button className="checkout-btn" type="button">
-          {"Continue to Shipping"}
-        </button>
       </form>
     </div>
   );
@@ -42,4 +39,4 @@ const Input = (props) => (
   </div>
 );
 
-export default Checkout;
+export default Payment;
