@@ -1,4 +1,3 @@
-import "../styles/Checkout.css";
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 

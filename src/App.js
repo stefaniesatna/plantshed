@@ -1,4 +1,3 @@
-import "./App.css";
 import CheckoutStepper from "./components/CheckoutStepper";
 import Home from "./components/home";
 import Header from "./components/header";

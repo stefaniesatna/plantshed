@@ -1,5 +1,3 @@
-import "../styles/Checkout.css";
-
 const Payment = () => {
   const visaImage =
     "https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png";
