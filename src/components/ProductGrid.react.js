@@ -2,11 +2,11 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import {useState} from 'react';
 
-export default function ProductGrid() {
+export default function ProductGrid({products}) {
 
   return (
     <div className='productGrid'>
-      {plantProducts.map((product, i) => {
+      {products.map((product, i) => {
         return (
           <Product productDetails={product} key={i} />
         )
@@ -19,8 +19,10 @@ const Product = ({productDetails}) => {
   const {title, price, size, img} = productDetails;
   let [productCount, setProductCount] = useState(1);
 
-  const increaseCount = () => {setProductCount(productCount++)};
-  const decreaseCount = () => {setProductCount(productCount--)};
+  const increaseCount = () => {setProductCount(productCount+1)};
+  const decreaseCount = () => {
+    if (productCount>1) {setProductCount(productCount-1)}
+  };
 
   return (
     <div className='productItem'>
@@ -34,57 +36,11 @@ const Product = ({productDetails}) => {
           <p className='productPrice'>{price}</p>
         </div>
         <div className='purchaseQuantity'>
-          <RemoveIcon onClick={decreaseCount}/>
+          <RemoveIcon onClick={decreaseCount} className='changeQuantityBtn'/>
           <p>{productCount}</p>
-          <AddIcon onClick={increaseCount}/>
+          <AddIcon onClick={increaseCount} className='changeQuantityBtn'/>
         </div>
       </span>
     </div>
   )
 }
-
-
-const plantProducts = [
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  },
-  {
-    title: 'Some Plant',
-    price: '$89',
-    size: 'S',
-    img: '',
-  }
-]
