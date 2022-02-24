@@ -384,6 +384,25 @@ body {
     margin-top: 1em;
   }
 
+  .login-form {
+    width: 90%;
+    background-color: aqua;
+
+    .section {
+      padding: 1em 0 0 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 1em;
+    }
+
+    label {
+      width: 100%;
+    }
+
+  }
+
   /* Body styles */
   .centered-text {
     text-align: center;

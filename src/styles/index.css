@@ -500,6 +500,24 @@ body {
   margin-top: 1em;
 }
 
+.login-page .login-form {
+  width: 90%;
+  background-color: aqua;
+}
+
+.login-page .login-form .section {
+  padding: 1em 0 0 0;
+}
+
+.login-page .login-form input {
+  width: 100%;
+  padding: 1em;
+}
+
+.login-page .login-form label {
+  width: 100%;
+}
+
 .login-page .centered-text {
   text-align: center;
 }
