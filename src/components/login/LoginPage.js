@@ -3,18 +3,14 @@ import { useState } from "react";
 import LoginWithEmail from "./LoginWithEmail";
 
 export default function LoginPage() {
-  const [loggingState, setLoggingState] = useState("default");
-  const handleSelect = (newState) => setLoggingState(newState);
-  const loggingComponent =
-    loggingState === "email" ? (
-      <LoginWithEmail />
-    ) : (
-      <LoginModal handleSelect={handleSelect} />
-    );
+
+  // const [state, setState] = useState("");
+
+  const handleSelect = () => console.log("Hello");
 
   return (
     <div className="login-page">
-      {loggingComponent}
+      <LoginModal handleSelect={handleSelect}/>
       <div className="centered-text">Or create an account</div>
     </div>
   );
