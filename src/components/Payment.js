@@ -32,7 +32,7 @@ const Payment = () => {
 };
 
 const Input = (props) => (
-  <div className="input">
+  <div className="checkout-input">
     <label>{props.label}</label>
     <div className="input-field">
       <input type={props.type} name={props.name} />

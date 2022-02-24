@@ -1,28 +1,27 @@
-import {Facebook, Google, MailOutline} from '@mui/icons-material';
+import { Facebook, Google, MailOutline } from "@mui/icons-material";
+// This is a test for git 
+export default function LoginButton({ way, icon }) {
+  const iconNames = ["Facebook", "Google", "MailOutline"];
 
-export default function LoginButton({way, icon}){
+  const style = {
+    width: "388px",
+    height: "48px",
+    borderRadius: 5,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "#e1e4eb",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    marginBottom: 10,
+  };
 
-    const iconNames = ["Facebook", "Google", "MailOutline"];
+  const text = `Continue with ${way}`;
 
-    const style = {
-        width: "388px",
-        height: "48px",
-        borderRadius: 5, 
-        borderStyle: "solid",
-        borderWidth: 1,
-        borderColor: "#e1e4eb",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        marginBottom: 10,
-    }
-
-    const text = `Continue with ${way}`;
-
-    return (
-        <button style={style}>
-            <MailOutline />
-            {text}
-        </button>
-    )
+  return (
+    <button style={style}>
+      <MailOutline />
+      {text}
+    </button>
+  );
 }
