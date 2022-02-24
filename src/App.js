@@ -3,6 +3,7 @@ import Home from "./components/home";
 import Header from "./components/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Plants from "./components/Plants";
+import Coffee from "./components/Coffee.react";
 import LoginPage from "./components/login/LoginPage";
 
 function App() {
@@ -11,9 +12,10 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="coffee" element={<Coffee />} />
         <Route path="plants" element={<Plants />} />
-       <Route path="checkout" element={<CheckoutStepper />} />
-       <Route path="login" element={<LoginPage />} />
+        <Route path="checkout" element={<CheckoutStepper />} />
+        <Route path="login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
