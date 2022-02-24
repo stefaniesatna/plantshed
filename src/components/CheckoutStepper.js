@@ -23,8 +23,8 @@ const CheckoutStepper = () => {
   };
 
   return (
-    <Box style={{marginTop: "10px"}}>
-      <Stepper style={{fontFamily: "inherit"}} activeStep={activeStep}>
+    <Box style={{ marginTop: "10px" }}>
+      <Stepper style={{ fontFamily: "inherit" }} activeStep={activeStep}>
         {STEPS.map((label, _) => {
           return (
             <Step key={label}>
@@ -35,8 +35,10 @@ const CheckoutStepper = () => {
       </Stepper>
       {activeStep === STEPS.length ? (
         <Fragment>
-          <div  style={{display: "grid", height: "360px"}}>
-          <h1 style={{placeSelf: "center"}}>Thank you for shopping with Plantshed!</h1>
+          <div style={{ display: "grid", height: "360px" }}>
+            <h1 style={{ placeSelf: "center" }}>
+              Thank you for shopping with Plantshed!
+            </h1>
           </div>
         </Fragment>
       ) : (
@@ -54,7 +56,9 @@ const CheckoutStepper = () => {
             </Button>
             <Box style={{ flex: "1 1 auto" }} />
             <button onClick={handleNext} className="checkout-btn" type="button">
-              {activeStep === STEPS.length - 1 ? "Checkout" : `Continue to ${STEPS[activeStep+1]}`}
+              {activeStep === STEPS.length - 1
+                ? "Checkout"
+                : `Continue to ${STEPS[activeStep + 1]}`}
             </button>
           </Box>
         </Fragment>
