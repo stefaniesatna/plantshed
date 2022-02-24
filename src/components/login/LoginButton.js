@@ -1,5 +1,5 @@
 import { Facebook, Google, MailOutline } from "@mui/icons-material";
-
+// This is a test for git 
 export default function LoginButton({ way, icon }) {
   const iconNames = ["Facebook", "Google", "MailOutline"];
 
