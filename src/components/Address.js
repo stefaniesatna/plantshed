@@ -1,5 +1,3 @@
-import "../styles/Checkout.css";
-
 const Address = () => {
   return (
     <div className="checkout">
