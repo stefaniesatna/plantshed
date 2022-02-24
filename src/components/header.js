@@ -16,9 +16,7 @@ export default function Header() {
         </a>
       </span>
 
-      <a className="headerImage" href="/">
-        <img src="/img/ps-logo.svg" height="40px" />
-      </a>
+      <img src="/img/ps-logo.svg" height="40px" style={{ cursor: "pointer" }} />
 
       <span className="headerAccount">
         <Link className="headerLink" to="checkout">
