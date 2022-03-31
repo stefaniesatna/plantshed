@@ -12,31 +12,31 @@ describe("Navbar", () => {
     cy.get("[data-cy=coffeeLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/coffee");
+      .should("eq", "http://localhost:3000/coffee");
 
     cy.get("[data-cy=plantsLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/plants");
+      .should("eq", "http://localhost:3000/plants");
 
     cy.get("[data-cy=aboutLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/about");
+      .should("eq", "http://localhost:3000/about");
 
     cy.get("[data-cy=homeLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/");
+      .should("eq", "http://localhost:3000/");
 
     cy.get("[data-cy=checkoutLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/checkout");
+      .should("eq", "http://localhost:3000/checkout");
 
     cy.get("[data-cy=loginLink]")
       .click()
       .url()
-      .should("eq", "http://localhost:3001/login");
+      .should("eq", "http://localhost:3000/login");
   });
 });
